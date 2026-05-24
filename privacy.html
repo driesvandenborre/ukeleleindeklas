@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Privacyverklaring — ukeleleindeklas.be</title>
+<meta name="description" content="Privacyverklaring van ukeleleindeklas.be — welke persoonsgegevens we via deze website verzamelen, waarom, en welke rechten je hebt." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://ukeleleindeklas.be/privacy.html" />
+<meta name="theme-color" content="#faf4e6" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+/* ─── Tokens (zelfde palet als index.html) ──────────────────── */
+:root {
+  --bg:        #faf4e6;
+  --ink:       #1d1916;
+  --ink-soft:  #4d433a;
+  --ink-mute:  #7b6f60;
+  --hair:      rgba(29, 25, 22, 0.12);
+  --yellow:    #f4c440;
+  --yellow-soft: #fbe48a;
+  --terra:     #cb6736;
+  --coral:     #e0593f;
+  --teal:      #1f5d63;
+
+  --max:    760px;
+  --gutter: clamp(20px, 4vw, 40px);
+
+  --font-display: "Outfit", "DM Sans", system-ui, sans-serif;
+  --font-body:    "DM Sans", system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; color-scheme: light; overflow-x: clip; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(29, 25, 22, 0.18);
+  overflow-x: hidden;
+}
+
+/* ─── Grain-textuur (zelfde als index.html) ───────────────────── */
+:root { --grain-opacity: 0.04; }
+body::after {
+  content: "";
+  position: fixed; inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: var(--grain-opacity);
+  mix-blend-mode: multiply;
+}
+
+.skip {
+  position: absolute; left: 12px; top: 12px;
+  background: var(--ink); color: var(--bg);
+  padding: 10px 14px; border-radius: 8px;
+  text-decoration: none; font-weight: 600;
+  transform: translateY(-200%);
+  transition: transform .2s ease;
+  z-index: 100;
+}
+.skip:focus { transform: translateY(0); }
+
+.wrap { max-width: var(--max); margin-inline: auto; padding-inline: var(--gutter); }
+
+/* Topbar */
+.topbar { padding: 22px 0 0; }
+.topbar-inner {
+  max-width: 1140px; margin-inline: auto;
+  padding-inline: var(--gutter);
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px;
+}
+.brand {
+  display: inline-flex; align-items: center; gap: 10px;
+  text-decoration: none; color: var(--ink);
+  font-family: var(--font-display); font-weight: 700; font-size: 1rem;
+  letter-spacing: -0.01em;
+}
+.brand-mark { width: 26px; height: 26px; display: block; }
+.top-contact {
+  color: var(--ink-soft); text-decoration: none; font-weight: 500; font-size: 0.95rem;
+  display: inline-flex; align-items: center; gap: 8px;
+  transition: color .15s ease;
+}
+.top-contact:hover, .top-contact:focus-visible { color: var(--ink); }
+
+/* Decoratieve cirkel achter de titel */
+.privacy { position: relative; padding-block: clamp(56px, 7vw, 100px); }
+.privacy-bg {
+  position: absolute; top: 40px; right: -10%;
+  width: clamp(220px, 28vw, 360px);
+  height: clamp(220px, 28vw, 360px);
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Header van de pagina */
+.privacy-head {
+  position: relative; z-index: 1;
+  margin-bottom: clamp(32px, 4vw, 56px);
+}
+.section-label {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-body); font-size: 0.78rem; font-weight: 600;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 18px;
+}
+.section-label::before {
+  content: ""; width: 22px; height: 1.5px; background: var(--ink-mute); border-radius: 2px;
+}
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  text-wrap: balance;
+  margin: 0;
+  color: var(--ink);
+}
+h1 { font-size: clamp(2.2rem, 4vw + 0.5rem, 3.4rem); letter-spacing: -0.022em; }
+h2 {
+  font-size: clamp(1.35rem, 1vw + 1rem, 1.7rem);
+  letter-spacing: -0.015em;
+  margin-top: clamp(36px, 4vw, 52px);
+  margin-bottom: 12px;
+}
+h3 {
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.lede {
+  margin-top: 18px;
+  font-size: clamp(1.05rem, 0.4vw + 1rem, 1.2rem);
+  color: var(--ink-soft);
+  line-height: 1.55;
+  text-wrap: pretty;
+  max-width: 38em;
+}
+.last-updated {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--ink-mute);
+  font-family: var(--font-display); font-weight: 500;
+}
+
+.privacy-body {
+  position: relative; z-index: 1;
+}
+.privacy-body p {
+  margin: 0 0 1em;
+  color: var(--ink-soft);
+  text-wrap: pretty;
+}
+.privacy-body p:last-child { margin-bottom: 0; }
+.privacy-body strong { color: var(--ink); font-weight: 600; }
+.privacy-body ul {
+  margin: 0 0 1.2em;
+  padding-left: 1.4em;
+  color: var(--ink-soft);
+}
+.privacy-body li { margin-bottom: 0.4em; }
+.privacy-body a {
+  color: var(--ink);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  background-image: linear-gradient(var(--yellow), var(--yellow));
+  background-repeat: no-repeat;
+  background-size: 100% 0.28em;
+  background-position: 0 88%;
+  padding: 0 2px;
+  transition: background-size .25s ease;
+}
+.privacy-body a:hover, .privacy-body a:focus-visible {
+  background-size: 100% 100%;
+}
+.privacy-body a:focus-visible {
+  outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 3px;
+}
+
+.address-card {
+  background: #fff;
+  border: 1.5px solid var(--hair);
+  border-radius: 18px;
+  padding: 20px 22px;
+  margin: 0 0 1.2em;
+  font-style: normal;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+.address-card strong { display: block; margin-bottom: 4px; color: var(--ink); font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; }
+
+.back-link {
+  display: inline-flex; align-items: center; gap: 10px;
+  margin-top: clamp(40px, 5vw, 60px);
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-family: var(--font-display); font-weight: 600;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+  background: transparent;
+  transition: transform .2s ease, background-color .2s ease, color .2s ease;
+  background-image: none;
+}
+.back-link:hover, .back-link:focus-visible {
+  background: var(--ink); color: var(--bg);
+  transform: translateY(-2px);
+}
+.back-link svg { width: 16px; height: 16px; }
+
+/* Footer */
+footer {
+  border-top: 1.5px solid var(--hair);
+  padding: 32px 0 40px;
+  margin-top: clamp(60px, 8vw, 100px);
+}
+footer .wrap {
+  max-width: 1140px;
+  display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: baseline;
+  color: var(--ink-mute);
+  font-size: 0.92rem;
+}
+footer a {
+  color: inherit; text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color .15s ease, color .15s ease;
+}
+footer a:hover, footer a:focus-visible { color: var(--ink); border-bottom-color: var(--ink); }
+footer .name { color: var(--ink); font-family: var(--font-display); font-weight: 600; }
+
+*:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 3px; }
+
+@media (max-width: 540px) {
+  body { font-size: 16px; }
+  .privacy-bg { width: 200px; height: 200px; right: -25%; top: 20px; }
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Spring naar inhoud</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html" aria-label="ukeleleindeklas.be — terug naar de startpagina">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="18" fill="#f4c440"/>
+        <circle cx="20" cy="20" r="6.5" fill="none" stroke="#1d1916" stroke-width="2"/>
+        <circle cx="20" cy="20" r="3" fill="#1d1916"/>
+      </svg>
+      <span>ukeleleindeklas.be</span>
+    </a>
+    <a class="top-contact" href="index.html#contact">Contact</a>
+  </div>
+</header>
+
+<main id="main" class="privacy">
+  <svg class="privacy-bg" viewBox="0 0 220 220" aria-hidden="true">
+    <circle cx="110" cy="110" r="108" fill="#1f5d63"/>
+  </svg>
+
+  <div class="wrap">
+    <header class="privacy-head">
+      <span class="section-label">Privacyverklaring</span>
+      <h1>Hoe we omgaan met jouw gegevens.</h1>
+      <p class="lede">
+        Wat we via ukeleleindeklas.be verzamelen, waarom, en welke rechten je hebt. Kort en duidelijk.
+      </p>
+      <p class="last-updated">Laatst bijgewerkt op <time datetime="2026-05-23">23&nbsp;mei&nbsp;2026</time></p>
+    </header>
+
+    <div class="privacy-body">
+      <p>
+        Deze privacyverklaring legt uit welke persoonsgegevens via deze website worden verzameld, waarom, en welke rechten je hebt. Ze is van toepassing op de website ukeleleindeklas.be.
+      </p>
+
+      <h2>Wie is verantwoordelijk voor je gegevens?</h2>
+      <p>De verwerkingsverantwoordelijke is:</p>
+      <address class="address-card">
+        <strong>Dries Vanden Borre</strong>
+        Bredestraat 2C, 9920 Lievegem, België<br>
+        Ondernemingsnummer: BE 0568.613.901<br>
+        E-mail: <a href="mailto:info@driesvandenborre.com">info@driesvandenborre.com</a><br>
+        Telefoon: <a href="tel:+32498397354">0498&nbsp;39&nbsp;73&nbsp;54</a>
+      </address>
+      <p>Voor alle vragen over je persoonsgegevens of deze privacyverklaring kan je terecht op bovenstaand e-mailadres.</p>
+
+      <h2>Welke gegevens verzamelen we, en waarom?</h2>
+
+      <h3>Via het contactformulier</h3>
+      <p>Wanneer je het contactformulier op deze website invult, verwerken we de gegevens die je zelf opgeeft:</p>
+      <ul>
+        <li>je naam</li>
+        <li>de naam van je school</li>
+        <li>je e-mailadres</li>
+        <li>je telefoonnummer (optioneel)</li>
+        <li>de inhoud van je bericht</li>
+      </ul>
+      <p>
+        <strong>Doel:</strong> deze gegevens worden uitsluitend gebruikt om je aanvraag te beantwoorden en om de eventueel daaruit volgende afspraak of workshop te organiseren. We gebruiken ze niet voor nieuwsbrieven, reclame of enige vorm van marketing, en we verkopen of delen ze niet met derden voor commerciële doeleinden.
+      </p>
+      <p>
+        <strong>Rechtsgrond:</strong> de verwerking gebeurt op basis van jouw toestemming en met het oog op het nemen van stappen op jouw verzoek vóór een eventuele overeenkomst (artikel&nbsp;6.1.a en 6.1.b van de Algemene Verordening Gegevensbescherming).
+      </p>
+
+      <h3>Technische gegevens</h3>
+      <p>
+        Deze website wordt gehost door Cloudflare. Bij een bezoek kunnen, zoals bij vrijwel elke website, beperkte technische gegevens worden verwerkt (zoals je IP-adres en browsergegevens) die nodig zijn om de website veilig en correct te laten werken. Deze website gebruikt geen trackingcookies en geen analyse- of advertentiediensten die je gedrag volgen.
+      </p>
+
+      <h2>Met wie worden je gegevens gedeeld?</h2>
+      <p>
+        We schakelen een beperkt aantal dienstverleners in die je gegevens namens ons verwerken (verwerkers). Met hen zorgen we voor de nodige waarborgen:
+      </p>
+      <ul>
+        <li><strong>Web3Forms</strong> — verwerkt de gegevens die je via het contactformulier verstuurt, om die aan ons te bezorgen. Web3Forms kan gegevens buiten de Europese Economische Ruimte verwerken; dat gebeurt met de wettelijk vereiste waarborgen (zoals de standaardcontractbepalingen van de Europese Commissie).</li>
+        <li><strong>Cloudflare</strong> — verzorgt de hosting en de beveiliging van de website.</li>
+      </ul>
+      <p>Buiten deze verwerkers geven we je gegevens niet door aan derden, tenzij we daartoe wettelijk verplicht zouden zijn.</p>
+
+      <h2>Hoe lang bewaren we je gegevens?</h2>
+      <p>
+        We bewaren je gegevens niet langer dan nodig voor het doel waarvoor je ze hebt bezorgd. Aanvragen die niet tot een samenwerking leiden, worden binnen twaalf maanden verwijderd. Leidt je aanvraag wel tot een workshop, dan bewaren we de gegevens zolang dat nodig is voor de organisatie ervan en voor de wettelijke verplichtingen die daaruit volgen (zoals de boekhoudkundige bewaarplicht).
+      </p>
+
+      <h2>Je rechten</h2>
+      <p>Volgens de privacywetgeving heb je de volgende rechten met betrekking tot je persoonsgegevens:</p>
+      <ul>
+        <li><strong>Recht op inzage</strong> — je mag opvragen welke gegevens we van je hebben.</li>
+        <li><strong>Recht op verbetering</strong> — je mag onjuiste gegevens laten corrigeren.</li>
+        <li><strong>Recht op verwijdering</strong> — je mag vragen je gegevens te wissen.</li>
+        <li><strong>Recht op beperking</strong> — je mag vragen de verwerking tijdelijk stop te zetten.</li>
+        <li><strong>Recht op overdraagbaarheid</strong> — je mag je gegevens in een leesbaar formaat opvragen.</li>
+        <li><strong>Recht van bezwaar</strong> — je mag bezwaar maken tegen de verwerking.</li>
+        <li><strong>Recht om je toestemming in te trekken</strong> — wanneer de verwerking op toestemming berust, mag je die op elk moment intrekken.</li>
+      </ul>
+      <p>
+        Je kan deze rechten uitoefenen door een e-mail te sturen naar <a href="mailto:info@driesvandenborre.com">info@driesvandenborre.com</a>. We reageren binnen de wettelijke termijn van één maand.
+      </p>
+
+      <h2>Klacht indienen</h2>
+      <p>
+        Ben je van mening dat we je gegevens niet correct verwerken, dan kan je een klacht indienen bij de toezichthoudende autoriteit:
+      </p>
+      <address class="address-card">
+        <strong>Gegevensbeschermingsautoriteit (GBA)</strong>
+        Drukpersstraat 35, 1000 Brussel<br>
+        Telefoon: +32&nbsp;(0)2&nbsp;274&nbsp;48&nbsp;00<br>
+        E-mail: <a href="mailto:contact@apd-gba.be">contact@apd-gba.be</a><br>
+        Website: <a href="https://www.gegevensbeschermingsautoriteit.be" rel="noopener noreferrer">www.gegevensbeschermingsautoriteit.be</a>
+      </address>
+      <p>
+        Een klacht of verzoek dien je bij de GBA in via hun online formulieren op <a href="https://www.gegevensbeschermingsautoriteit.be/verzoek-klacht-indienen" rel="noopener noreferrer">www.gegevensbeschermingsautoriteit.be/verzoek-klacht-indienen</a>, of per post op bovenstaand adres.
+      </p>
+
+      <h2>Wijzigingen</h2>
+      <p>
+        We kunnen deze privacyverklaring aanpassen wanneer onze werkwijze of de wetgeving verandert. De meest recente versie staat steeds op deze pagina, met bovenaan de datum van de laatste wijziging.
+      </p>
+
+      <a class="back-link" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M19 12H5"/><path d="M11 19l-7-7 7-7"/>
+        </svg>
+        Terug naar de startpagina
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><span class="name">Dries Vanden Borre</span> · <a href="mailto:info@driesvandenborre.com">info@driesvandenborre.com</a> · <a href="tel:+32498397354">0498&nbsp;39&nbsp;73&nbsp;54</a></div>
+    <div>© 2026 Dries Vanden Borre · Lievegem · <a href="privacy.html" aria-current="page">Privacyverklaring</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

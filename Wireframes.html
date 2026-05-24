@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Wireframes — ukeleleindeklas.be</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Patrick+Hand&family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #f0eee9; font-family: "DM Sans", system-ui, sans-serif; color: #1d1916; }
+  body { overflow: hidden; }
+</style>
+</head>
+<body>
+
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="wireframes.jsx"></script>
+
+<script type="text/babel">
+  const { DesignCanvas, DCSection, DCArtboard, DCPostIt } = window;
+  const { WireframeA, WireframeB, WireframeC, WireframeD } = window;
+
+  function App() {
+    return (
+      <DesignCanvas>
+        <DCSection id="intro" title="ukeleleindeklas.be — wireframes" subtitle="Vier lo-fi richtingen. Drag om te verplaatsen · klik de vergroot-knop om fullscreen te zien.">
+          <DCPostIt left={20} top={20} width={260}>
+            <b>Wat is vast:</b><br/>
+            • Volgorde 7 secties (briefing §6)<br/>
+            • Copy is letterlijk overgenomen<br/>
+            • Geometrische sans (Outfit + DM Sans)<br/>
+            • Zonnegeel = dominant<br/>
+            • 3 stappen = horizontale flow met pijltjes<br/>
+            • Formulier-endpoint = placeholder
+          </DCPostIt>
+          <DCPostIt left={320} top={40} width={260} rotate={2}>
+            <b>Wat varieert:</b><br/>
+            • Hero-compositie (foto-zone)<br/>
+            • Kleur-ritme tussen secties<br/>
+            • Vormtaal & ukelele-motief<br/><br/>
+            <i>Kies een richting (of mix elementen) — dan werk ik hi-fi uit.</i>
+          </DCPostIt>
+        </DCSection>
+
+        <DCSection id="variants" title="Vier richtingen" subtitle="Van rustig naar speels, links naar rechts.">
+          <DCArtboard id="a" label="A · Klassiek & helder" width={680} height={2200}>
+            <WireframeA />
+          </DCArtboard>
+          <DCArtboard id="b" label="B · Banden van kleur" width={680} height={2200}>
+            <WireframeB />
+          </DCArtboard>
+          <DCArtboard id="c" label="C · Bold blokken" width={680} height={2200}>
+            <WireframeC />
+          </DCArtboard>
+          <DCArtboard id="d" label="D · Editorial / asymmetrisch" width={680} height={2200}>
+            <WireframeD />
+          </DCArtboard>
+        </DCSection>
+      </DesignCanvas>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+
+</body>
+</html>
