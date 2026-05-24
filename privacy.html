@@ -30,6 +30,8 @@
 
   --max:    760px;
   --gutter: clamp(20px, 4vw, 40px);
+  --gutter-left:  max(var(--gutter), env(safe-area-inset-left));
+  --gutter-right: max(var(--gutter), env(safe-area-inset-right));
 
   --font-display: "Outfit", "DM Sans", system-ui, sans-serif;
   --font-body:    "DM Sans", system-ui, sans-serif;
@@ -72,13 +74,13 @@ body::after {
 }
 .skip:focus { transform: translateY(0); }
 
-.wrap { max-width: var(--max); margin-inline: auto; padding-inline: var(--gutter); }
+.wrap { max-width: var(--max); margin-inline: auto; padding-left: var(--gutter-left); padding-right: var(--gutter-right); }
 
 /* Topbar */
 .topbar { padding: 22px 0 0; }
 .topbar-inner {
   max-width: 1140px; margin-inline: auto;
-  padding-inline: var(--gutter);
+  padding-left: var(--gutter-left); padding-right: var(--gutter-right);
   display: flex; align-items: center; justify-content: space-between;
   gap: 16px;
 }
