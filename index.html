@@ -100,7 +100,7 @@
   --bg-warm:   #f3e7c8;
   --ink:       #1d1916;
   --ink-soft:  #4d433a;
-  --ink-mute:  #7b6f60;
+  --ink-mute:  #776b5c;
   --hair:      rgba(29, 25, 22, 0.12);
 
   --yellow:       #f4c440;
@@ -108,6 +108,7 @@
   --yellow-glow:  #fde9a0;
   --terra:        #cb6736;
   --coral:        #e0593f;
+  --coral-text:   #c0432b;
   --teal:         #1f5d63;
   --teal-soft:    #cfe1de;
 
@@ -740,7 +741,7 @@ a.inline:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; bor
   font-family: var(--font-display); font-weight: 600; font-size: 0.92rem;
   color: var(--ink);
 }
-.field label .req { color: var(--terra); margin-left: 2px; }
+.field label .req { color: var(--coral-text); margin-left: 2px; }
 .field input, .field textarea {
   background: var(--bg);
   border: 1.5px solid var(--hair);
@@ -762,7 +763,7 @@ a.inline:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; bor
 }
 .field input:focus:not(:focus-visible), .field textarea:focus:not(:focus-visible) { outline: none; }
 .field input:focus-visible, .field textarea:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
-.field-error { color: var(--coral); font-size: 0.86rem; min-height: 1.2em; }
+.field-error { color: var(--coral-text); font-size: 0.86rem; min-height: 1.2em; }
 .field.has-error input, .field.has-error textarea { border-color: var(--coral); box-shadow: 0 0 0 4px rgba(224, 89, 63, 0.16); }
 
 /* hCaptcha-veld (widget is een iframe met vaste breedte; voorkom overflow op smal scherm) */
@@ -776,7 +777,7 @@ a.inline:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; bor
   font-size: 0.95rem; color: var(--ink-soft); line-height: 1.5;
 }
 .status[data-state="success"] { color: var(--teal); }
-.status[data-state="error"] { color: var(--coral); }
+.status[data-state="error"] { color: var(--coral-text); }
 
 /* Contact sidebar */
 .contact-side {
@@ -893,7 +894,7 @@ footer a:hover, footer a:focus-visible { color: var(--ink); border-bottom-color:
     gap: 22px;
   }
   .aanbod-card:nth-child(1), .aanbod-card:nth-child(3) { transform: none; }
-  .aanbod-card.is-featured { transform: none; order: -1; }
+  .aanbod-card.is-featured { transform: none; }
   .aanbod-card.is-featured:hover { transform: translateY(-4px); }
   .praktisch-panel { padding: 32px 28px; }
   .wie-bg { left: -25%; top: 100px; width: 360px; height: 360px; }
@@ -955,7 +956,7 @@ footer a:hover, footer a:focus-visible { color: var(--ink); border-bottom-color:
     <div class="wrap hero-grid">
       <div class="hero-text">
         <h1 id="hero-title" class="stagger stagger-1">
-          <span class="wavy">Ukelele</span><br>in de klas.
+          <span class="wavy">Ukelele</span> <br>in de klas.
         </h1>
         <p class="lede hero-lede stagger stagger-2">Eén halve dag en je hele team kan ukelele spelen. De week erna begeleiden ze de eerste liedjes in de klas.</p>
         <div class="hero-cta-row stagger stagger-3">
@@ -1006,7 +1007,7 @@ footer a:hover, footer a:focus-visible { color: var(--ink); border-bottom-color:
     <div class="wrap">
       <span class="section-label">VOOR WIE</span>
       <h2 id="voor-wie-title">Vier snaren. Direct bruikbaar in de klas!</h2>
-      <p class="body">Met een handvol akkoorden begeleid je op de ukelele al <strong>tientallen kinderliedjes</strong>. Je hoeft geen noten te kunnen lezen. Of je nu nooit een instrument vasthield of al jaren speelt, je kan meedoen.</p>
+      <p class="body">Met een handvol akkoorden begeleid je op de ukelele al tientallen kinderliedjes. Je hoeft geen noten te kunnen lezen. Of je nu nog nooit een instrument vasthield of al jaren muziek speelt, iedereen kan meedoen.</p>
     </div>
   </section>
 
@@ -1017,14 +1018,14 @@ footer a:hover, footer a:focus-visible { color: var(--ink); border-bottom-color:
     <div class="wrap">
       <div class="verloop-head">
         <span class="section-label">Hoe een halve dag verloopt</span>
-        <h2 id="verloop-title">Drie stappen. <span class="accent">Ongeveer drie uur.</span></h2>
+        <h2 id="verloop-title">Van kennismaken met de ukelele <span class="accent">tot gebruik in je lessen.</span></h2>
       </div>
 
       <div class="steps reveal-stagger">
         <article class="step">
           <div class="step-num" aria-hidden="true">1</div>
           <h3>Het instrument</h3>
-          <p>We stemmen samen, je leert ze vasthouden en speelt je eerste akkoord. Al vlug klinkt er muziek.</p>
+          <p>We stemmen samen, je leert je ukelele vasthouden en speelt je eerste akkoord. Al snel klinkt er muziek!</p>
         </article>
 
         <svg class="step-arrow" viewBox="0 0 60 20" aria-hidden="true">
@@ -1035,7 +1036,7 @@ footer a:hover, footer a:focus-visible { color: var(--ink); border-bottom-color:
         <article class="step">
           <div class="step-num" aria-hidden="true">2</div>
           <h3>Liedjes voor de klas</h3>
-          <p>De akkoorden voor de meeste kinderliedjes. We oefenen wat in je klas past, van &ldquo;hoedje van papier&rdquo; tot een afscheidslied voor het zesde leerjaar.</p>
+          <p>We leren de akkoorden voor de meeste kinderliedjes. We oefenen wat in je klas past, van &ldquo;hoedje van papier&rdquo; tot een afscheidslied voor het zesde leerjaar.</p>
         </article>
 
         <svg class="step-arrow" viewBox="0 0 60 20" aria-hidden="true">
@@ -1046,7 +1047,7 @@ footer a:hover, footer a:focus-visible { color: var(--ink); border-bottom-color:
         <article class="step">
           <div class="step-num" aria-hidden="true">3</div>
           <h3>Klaar voor maandag</h3>
-          <p>Voor je naar huis gaat, weet je hoe je er maandag mee aan de slag gaat.</p>
+          <p>Je leert hoe je de ukelele zelf kan inzetten in je klas, met concrete handvaten om er meteen mee te werken.</p>
         </article>
       </div>
     </div>
@@ -1060,7 +1061,7 @@ footer a:hover, footer a:focus-visible { color: var(--ink); border-bottom-color:
       <div class="op-maat-text">
         <span class="section-label">Op maat van jullie school</span>
         <h2 id="op-maat-title">Afgestemd op jullie lespraktijk</h2>
-        <p class="body" style="margin-top: 20px;">Speelt de helft al wat, of begint iedereen vanaf nul? Willen jullie rond bepaalde liedjes werken, rond samenspel, of rond de kleuterklas? Laat me weten waar jullie op willen inzetten, dan stem ik het programma daar volledig op af.</p>
+        <p class="body" style="margin-top: 20px;">Spelen sommigen al wat muziek of begint iedereen vanaf nul? Willen jullie rond bepaalde liedjes werken, rond samenspel of rond de kleuterklas? Laat me weten waar jullie op willen inzetten, dan stem ik het programma daar volledig op af.</p>
       </div>
 
       <div class="op-maat-visual" aria-hidden="true">
@@ -1131,11 +1132,11 @@ footer a:hover, footer a:focus-visible { color: var(--ink); border-bottom-color:
       <div class="aanbod-grid reveal-stagger">
         <article class="aanbod-card">
           <div class="kicker">Reeks van vijf</div>
-          <h3>Stap voor stap, tot het echt zit.</h3>
+          <h3>5 lessen om zelf klasliedjes te begeleiden</h3>
           <div class="duration"><span class="pip" aria-hidden="true"></span>5 sessies van een uur</div>
           <div class="from">Vanaf</div>
           <div class="price">€ 850</div>
-          <p class="desc">Vijf sessies van een uur op school, voor een kleine groep die dieper wil gaan.</p>
+          <p class="desc">Vijf sessies van een uur op school, voor een kleine groep die wil doorgroeien en ukelele actief wil inzetten in de klas.</p>
         </article>
 
         <article class="aanbod-card is-featured">
@@ -1145,16 +1146,16 @@ footer a:hover, footer a:focus-visible { color: var(--ink); border-bottom-color:
           <div class="duration"><span class="pip" aria-hidden="true"></span>± 3 uur, bij jullie op school</div>
           <div class="from">Vanaf</div>
           <div class="price">€ 400</div>
-          <p class="desc">Drie uur met je team. Je leert spelen en neemt het mee naar de klas.</p>
+          <p class="desc">Drie uur met je team op school, gericht op spelen, begeleiden en meteen toepassen in je lessen.</p>
         </article>
 
         <article class="aanbod-card">
           <div class="kicker">Korte workshop</div>
           <h3>Eerst even proeven.</h3>
-          <div class="duration"><span class="pip" aria-hidden="true"></span>Compacte sessie</div>
+          <div class="duration"><span class="pip" aria-hidden="true"></span>Compacte sessie van een uur.</div>
           <div class="from">Vanaf</div>
           <div class="price">€&nbsp;250</div>
-          <p class="desc">Een eerste kennismaking met de ukelele, om te proeven.</p>
+          <p class="desc">Een eerste kennismaking met de ukelele, om zelf te ervaren hoe het instrument werkt en wat het kan betekenen in de klas.</p>
         </article>
       </div>
 
@@ -1219,7 +1220,7 @@ footer a:hover, footer a:focus-visible { color: var(--ink); border-bottom-color:
     <div class="wrap">
       <div class="contact-head reveal">
         <span class="section-label">Contact</span>
-        <h2 id="contact-title">Een halve dag in te vullen, of even aftoetsen?</h2>
+        <h2 id="contact-title">Ukelele bij jou op school? Contacteer me!</h2>
       </div>
 
       <form class="form reveal" id="contact-form"
@@ -1261,7 +1262,7 @@ footer a:hover, footer a:focus-visible { color: var(--ink); border-bottom-color:
 
         <div class="field">
           <label for="bericht">Bericht <span class="req" aria-hidden="true">*</span></label>
-          <textarea id="bericht" name="message" rows="5" required aria-required="true" placeholder="Welke periode heb je in gedachten? Stel gerust je vraag." aria-describedby="bericht-error"></textarea>
+          <textarea id="bericht" name="message" rows="5" required aria-required="true" autocomplete="off" placeholder="Welke periode heb je in gedachten? Stel gerust je vraag." aria-describedby="bericht-error"></textarea>
           <div class="field-error" id="bericht-error" role="alert"></div>
         </div>
 
@@ -1296,7 +1297,7 @@ footer a:hover, footer a:focus-visible { color: var(--ink); border-bottom-color:
           </svg>
           0498&nbsp;39&nbsp;73&nbsp;54
         </a>
-        <p class="body" style="margin-top: 20px; font-size: 0.92rem;">Moet dit eerst nog besproken worden op een vergadering of moet de planning nog worden uitgewerkt? Stuur gerust al een vrijblijvende vraag.</p>
+        <p class="body" style="margin-top: 20px; font-size: 0.92rem;">Moet dit eerst nog even besproken worden op een vergadering of moet de planning nog worden uitgewerkt? Stuur gerust al een vrijblijvende vraag.</p>
 
         <address class="contact-business">
           <span class="label">Gegevens</span>
