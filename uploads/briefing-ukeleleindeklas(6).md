@@ -108,7 +108,7 @@ Ik ben Dries Vanden Borre, gitarist en muziekdocent. Sinds 2012 geef ik les, eer
 - Regio Gent en omstreken, tot ongeveer 35 km rond Lievegem
 
 ### Contact
-Een halve dag in te vullen, of gewoon eens aftoetsen? Vul het formulier in, mail naar info@driesvandenborre.com of bel 0498 39 73 54.
+Een halve dag in te vullen, of gewoon eens aftoetsen? Vul het formulier in, mail naar info@ukeleleindeklas.be of bel 0498 39 73 54.
 
 **Contactformulier (laagdrempelig, naast de mail- en telefoonlink):**
 - Naam (verplicht)
@@ -121,7 +121,7 @@ Een halve dag in te vullen, of gewoon eens aftoetsen? Vul het formulier in, mail
 
 ### Vaste gegevens
 - Domein: ukeleleindeklas.be
-- E-mail: info@driesvandenborre.com
+- E-mail: info@ukeleleindeklas.be
 - Telefoon: 0498 39 73 54
 - Naam: Dries Vanden Borre (drie woorden)
 - Standplaats: Lievegem
@@ -271,15 +271,15 @@ Een formulier maakt onderstaande regels relevant — pas ze allemaal toe:
 - Voeg het Web3Forms honeypot-veld toe (`<input type="checkbox" name="botcheck" style="display:none">`) tegen spam.
 - Voeg een verborgen `subject`-veld toe met de waarde "Nieuwe aanvraag via ukeleleindeklas.be" voor een herkenbare onderwerpregel in de inbox.
 - Voorzie een succesweergave na verzending in het Nederlands: "Bedankt, je aanvraag is verstuurd. Ik neem snel contact op."
-- Bij een fout: "Versturen lukte niet — mail gerust rechtstreeks naar info@driesvandenborre.com."
-- Web3Forms verstuurt de inzending naar info@driesvandenborre.com.
+- Bij een fout: "Versturen lukte niet — mail gerust rechtstreeks naar info@ukeleleindeklas.be."
+- Web3Forms verstuurt de inzending naar info@ukeleleindeklas.be.
 
 ---
 
 ## 10. Open beslissingen (reeds gemaakt, hier vastgelegd)
 - Drie formaten worden getoond met "vanaf"-prijzen: korte workshop (vanaf € 250), halve dag (vanaf € 400, centraal/aanbevolen), reeks van vijf sessies (vanaf € 850). Prijzen in ankervolgorde in het keuzeblok (reeks eerst als referentiepunt).
 - Telefoonnummer wordt getoond (0498 39 73 54).
-- E-mailadres: info@driesvandenborre.com.
+- E-mailadres: info@ukeleleindeklas.be.
 - Geen filmpjes (niet vermelden — die bestaan niet).
 - Materiaal is een digitale map (niets fysiek).
 - Contact verloopt via een laagdrempelig formulier (verzonden via Web3Forms) náást de directe mail- en telefoonlink. Geen live-boekingsagenda — dat past niet bij hoe scholen een pedagogische halve dag plannen (beslissing in een vergadering, ver vooruit).
@@ -306,7 +306,7 @@ De op te leveren bestanden: `index.html`, `privacy.html`, `robots.txt`, `sitemap
 2. Domein aan Cloudflare koppelen: nameservers bij Combell omzetten naar de Cloudflare-nameservers, daarna `ukeleleindeklas.be` aan het Cloudflare Pages-project koppelen. SSL/https is automatisch inbegrepen.
 
 **Testen vóór live:**
-- Contactformulier invullen en controleren of de mail aankomt bij info@driesvandenborre.com.
+- Contactformulier invullen en controleren of de mail aankomt bij info@ukeleleindeklas.be.
 - Pagina openen op een telefoon (mobiele weergave).
 - Mailto- en tel-links controleren.
 - Snelheid testen via Google PageSpeed Insights (meteen ook een SEO-check).

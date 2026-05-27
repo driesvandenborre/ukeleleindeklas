@@ -11,7 +11,7 @@ De verwerkingsverantwoordelijke is:
 **Dries Vanden Borre**
 Bredestraat 2C, 9920 Lievegem, België
 Ondernemingsnummer: BE 0568.613.901
-E-mail: info@driesvandenborre.com
+E-mail: info@ukeleleindeklas.be
 Telefoon: 0498 39 73 54
 
 Voor alle vragen over je persoonsgegevens of deze privacyverklaring kan je terecht op bovenstaand e-mailadres.
@@ -59,7 +59,7 @@ Volgens de privacywetgeving heb je de volgende rechten met betrekking tot je per
 - **Recht van bezwaar** — je mag bezwaar maken tegen de verwerking.
 - **Recht om je toestemming in te trekken** — wanneer de verwerking op toestemming berust, mag je die op elk moment intrekken.
 
-Je kan deze rechten uitoefenen door een e-mail te sturen naar info@driesvandenborre.com. We reageren binnen de wettelijke termijn van één maand.
+Je kan deze rechten uitoefenen door een e-mail te sturen naar info@ukeleleindeklas.be. We reageren binnen de wettelijke termijn van één maand.
 
 ## Klacht indienen
 

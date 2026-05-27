@@ -108,7 +108,7 @@ Ik ben Dries Vanden Borre, gitarist en muziekdocent. Ik geef al sinds 2012 les, 
 - Regio Gent en omstreken, tot ongeveer 35 km rond Lievegem
 
 ### Contact
-Een halve dag in te vullen, of gewoon eens aftoetsen? Vul het formulier in, mail naar info@driesvandenborre.com of bel 0498 39 73 54.
+Een halve dag in te vullen, of gewoon eens aftoetsen? Vul het formulier in, mail naar info@ukeleleindeklas.be of bel 0498 39 73 54.
 
 **Contactformulier (laagdrempelig, naast de mail- en telefoonlink):**
 - Naam (verplicht)
@@ -121,7 +121,7 @@ Een halve dag in te vullen, of gewoon eens aftoetsen? Vul het formulier in, mail
 
 ### Vaste gegevens
 - Domein: ukeleleindeklas.be
-- E-mail: info@driesvandenborre.com
+- E-mail: info@ukeleleindeklas.be
 - Telefoon: 0498 39 73 54
 - Naam: Dries Vanden Borre (drie woorden)
 - Standplaats: Lievegem
@@ -267,16 +267,16 @@ Een formulier maakt onderstaande regels relevant — pas ze allemaal toe:
 ### Verzending via formulierdienst (Web3Forms)
 - Het formulier post naar de Web3Forms-endpoint (`https://api.web3forms.com/submit`) met de access key in een verborgen veld. Bouw het zo dat enkel die ene access key hoeft te worden ingevuld; de rest van de pagina blijft ongewijzigd.
 - Zet de access key duidelijk herkenbaar bovenaan in het formulierblok als invulplek (bv. `value="VERVANG_DOOR_WEB3FORMS_ACCESS_KEY"` in het verborgen veld), zodat Dries 'm in één oogopslag terugvindt.
-- Voorzie een eenvoudige succesweergave na verzending. Bij een fout: toon een vriendelijke melding met de volgende stap ("Versturen lukte niet — mail gerust rechtstreeks naar info@driesvandenborre.com").
+- Voorzie een eenvoudige succesweergave na verzending. Bij een fout: toon een vriendelijke melding met de volgende stap ("Versturen lukte niet — mail gerust rechtstreeks naar info@ukeleleindeklas.be").
 - Voeg het Web3Forms honeypot-veld toe (`<input type="checkbox" name="botcheck" style="display:none">`) tegen spam.
-- Web3Forms verstuurt de inzending naar info@driesvandenborre.com (en eventueel een tweede gekoppeld adres; de gratis tier laat tot 3 adressen toe). Gebruik het verborgen `subject`-veld voor een herkenbare onderwerpregel, bv. "Nieuwe aanvraag via ukeleleindeklas.be".
+- Web3Forms verstuurt de inzending naar info@ukeleleindeklas.be (en eventueel een tweede gekoppeld adres; de gratis tier laat tot 3 adressen toe). Gebruik het verborgen `subject`-veld voor een herkenbare onderwerpregel, bv. "Nieuwe aanvraag via ukeleleindeklas.be".
 
 ---
 
 ## 10. Open beslissingen (reeds gemaakt, hier vastgelegd)
 - Drie formaten worden getoond met "vanaf"-prijzen: korte workshop (vanaf € 250), halve dag (vanaf € 400, centraal/aanbevolen), reeks van vijf sessies (vanaf € 850). Prijzen in ankervolgorde in het keuzeblok (reeks eerst als referentiepunt).
 - Telefoonnummer wordt getoond (0498 39 73 54).
-- E-mailadres: info@driesvandenborre.com.
+- E-mailadres: info@ukeleleindeklas.be.
 - Geen filmpjes (niet vermelden — die bestaan niet).
 - Materiaal is een digitale map (niets fysiek).
 - Contact verloopt via een laagdrempelig formulier (verzonden via Web3Forms) náást de directe mail- en telefoonlink. Geen live-boekingsagenda — dat past niet bij hoe scholen een pedagogische halve dag plannen (beslissing in een vergadering, ver vooruit).
@@ -303,7 +303,7 @@ De op te leveren bestanden: `index.html`, `privacy.html`, `robots.txt`, `sitemap
 2. Domein koppelen in datzelfde Cloudflare-dashboard (één klik als het domein al bij Cloudflare staat; DNS wordt automatisch geregeld). SSL/https is automatisch inbegrepen.
 
 **Testen vóór live:**
-- Contactformulier invullen en controleren of de mail aankomt bij info@driesvandenborre.com.
+- Contactformulier invullen en controleren of de mail aankomt bij info@ukeleleindeklas.be.
 - Pagina openen op een telefoon (mobiele weergave).
 - Mailto- en tel-links controleren.
 - Snelheid testen via Google PageSpeed Insights (meteen ook een SEO-check).

@@ -108,7 +108,7 @@ Ik ben Dries Vanden Borre, muzikant en gitaar- en ukeleledocent. Ik geef les aan
 - Regio Gent en omstreken, tot ongeveer 35 km rond Lievegem
 
 ### Contact
-Een voormiddag in te vullen, of gewoon eens aftoetsen? Vul het formulier in, mail naar info@driesvandenborre.com of bel 0498 39 73 54.
+Een voormiddag in te vullen, of gewoon eens aftoetsen? Vul het formulier in, mail naar info@ukeleleindeklas.be of bel 0498 39 73 54.
 
 **Contactformulier (laagdrempelig, naast de mail- en telefoonlink):**
 - Naam (verplicht)
@@ -121,7 +121,7 @@ Een voormiddag in te vullen, of gewoon eens aftoetsen? Vul het formulier in, mai
 
 ### Vaste gegevens
 - Domein: ukeleleindeklas.be
-- E-mail: info@driesvandenborre.com
+- E-mail: info@ukeleleindeklas.be
 - Telefoon: 0498 39 73 54
 - Naam: Dries Vanden Borre (drie woorden)
 - Standplaats: Lievegem
@@ -267,7 +267,7 @@ Een formulier maakt onderstaande regels relevant — pas ze allemaal toe:
 ### Verzending via formulierdienst
 - Het formulier post naar de endpoint-URL van een formulierdienst (Formspree of Web3Forms). Bouw het zo dat enkel die ene URL (en bij Web3Forms een access key in een verborgen veld) hoeft te worden ingevuld; de rest van de pagina blijft ongewijzigd.
 - Zet de endpoint-URL duidelijk herkenbaar bovenaan in het formulierblok als invulplek (bv. een opvallende `action="VERVANG_DOOR_FORMULIER_ENDPOINT"`), zodat Dries 'm in één oogopslag terugvindt.
-- Voorzie een eenvoudige succesweergave na verzending. Bij een fout: toon een vriendelijke melding met de volgende stap ("Versturen lukte niet — mail gerust rechtstreeks naar info@driesvandenborre.com").
+- Voorzie een eenvoudige succesweergave na verzending. Bij een fout: toon een vriendelijke melding met de volgende stap ("Versturen lukte niet — mail gerust rechtstreeks naar info@ukeleleindeklas.be").
 - Voeg een honeypot-veld toe (verborgen veld dat mensen niet invullen maar bots wel) tegen spam; beide diensten ondersteunen dit.
 
 ---
@@ -275,7 +275,7 @@ Een formulier maakt onderstaande regels relevant — pas ze allemaal toe:
 ## 10. Open beslissingen (reeds gemaakt, hier vastgelegd)
 - Prijs wordt getoond ("vanaf € 400"), niet "op aanvraag".
 - Telefoonnummer wordt getoond.
-- E-mailadres: info@driesvandenborre.com.
+- E-mailadres: info@ukeleleindeklas.be.
 - Geen filmpjes (niet vermelden — die bestaan niet).
 - Materiaal is een digitale map (niets fysiek).
 - Contact verloopt via een laagdrempelig formulier (verzonden via een formulierdienst) náást de directe mail- en telefoonlink. Geen live-boekingsagenda — dat past niet bij hoe scholen een pedagogische voormiddag plannen (beslissing in een vergadering, ver vooruit).

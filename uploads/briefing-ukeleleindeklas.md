@@ -90,11 +90,11 @@ Ik ben Dries Vanden Borre, muzikant en gitaar- en ukeleledocent. Ik geef les aan
 - Regio Gent en omstreken, tot ongeveer 35 km rond Lievegem
 
 ### Contact
-Een voormiddag in te vullen, of gewoon eens aftoetsen? Mail naar info@driesvandenborre.com of bel 0498 39 73 54.
+Een voormiddag in te vullen, of gewoon eens aftoetsen? Mail naar info@ukeleleindeklas.be of bel 0498 39 73 54.
 
 ### Vaste gegevens
 - Domein: ukeleleindeklas.be
-- E-mail: info@driesvandenborre.com
+- E-mail: info@ukeleleindeklas.be
 - Telefoon: 0498 39 73 54
 - Naam: Dries Vanden Borre (drie woorden)
 - Standplaats: Lievegem
@@ -185,7 +185,7 @@ Onderstaande regels zijn de relevante punten uit de Vercel Web Interface Guideli
 ## 9. Open beslissingen (reeds gemaakt, hier vastgelegd)
 - Prijs wordt getoond ("vanaf € 400"), niet "op aanvraag".
 - Telefoonnummer wordt getoond.
-- E-mailadres: info@driesvandenborre.com.
+- E-mailadres: info@ukeleleindeklas.be.
 - Geen filmpjes (niet vermelden — die bestaan niet).
 - Materiaal is een digitale map (niets fysiek).
 
